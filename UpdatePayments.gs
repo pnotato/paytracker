@@ -7,7 +7,7 @@ function CheckPayments() {
     }
 }
 
-// Searches for e-transfers 
+// Searches for e-transfers. You will need to create an e-transfer label in your inbox.
 function ParsePayments() {
   res = []
   var threads = GmailApp.search('newer_than:3h AND label:e-transfers')
